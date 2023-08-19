@@ -10,11 +10,12 @@
 <div >
 	<h3> 📚 Materias del repositorio: </h3>
   <br>
-  <h4 align="center" >Laboratorio IV | Metodoloía de Sistemas </h4>
+  <h4 align="center" >Laboratorio IV | Metodología de Sistemas </h4>
   <h3> 🗂 Lenguajes del repositorio:</h3>
 	<br>
   <div align="center">
 	<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" title="JavaScrip" alt="JS" width="45" height="45">&nbsp;
+	  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title="nodeJS" alt="nodeJS" width="45" height="45">&nbsp;
 	<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-plain.svg" title="Java" alt="JAVA" width="45" height="45">&nbsp;
 	<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="PYTHON" width="45" height="45">&nbsp;
   <br>
@@ -120,22 +121,11 @@
 		<td>Britez Neira Leila</td>
 	</tr>
 </table>
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2><srong><u> 🌳 Trabajo en ramas semanales</u></srong></h2>
+<h4>	  
+  Durante la cursada nos organizaremos con ramas semanales para el código de la cursada. Cada estudiante realizará los trabajos semanales desde su rama con su nombre y al finalizar la semana, todos realizarán un pull request para realizar el merge de su rama con la rama main, la cual nunca será modificada directamente sino que a través de los merges con la aprobación obligatoria de los otros participantes y su code reveiew correspondiente.
+	
+ </h4>
 
