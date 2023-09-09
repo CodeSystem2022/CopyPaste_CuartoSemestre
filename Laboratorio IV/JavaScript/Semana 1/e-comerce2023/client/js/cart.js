@@ -40,7 +40,7 @@ const displayCart = () => {
             </div>
             <div class = "quantity">
                 <span class = "quantity-btn-decrese">-</span>
-                <span class = "quantity-input>${product.quanty}"</span>
+                <span class = "quantity-input">${product.quanty}</span>
                 <span class = "quantity-btn-increse">+</span>
             </div>
             <div class = "price">${product.price * product.quanty} $</div>
@@ -69,6 +69,8 @@ const displayCart = () => {
 
     //modal footer
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
+
+
 
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
