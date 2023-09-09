@@ -2,6 +2,7 @@ const shopContent = document.getElementById("shopContent");
 
 productos.forEach((product) =>{
     const content = document.createElement("div");
+    content.className = "card";
     content.innerHTML = `
     <img src="${product.img}">
     <h3>${product.productName}</h3>
