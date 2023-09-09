@@ -9,7 +9,7 @@ productos.forEach((product) =>{
     <p>${product.price} $</p>
     `;
     shopContent.append(content);
-    
+
     const buyButton = document.createElement("button");
     buyButton.innerText = "Comprar";
 
