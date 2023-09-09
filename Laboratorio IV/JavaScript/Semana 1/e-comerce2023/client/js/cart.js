@@ -86,4 +86,6 @@ cartBtn.addEventListener("click", displayCart);
 
 const deleteCartProduct = (id) => { 
     const foundId = cart.findIndex((element)=> element.id === id);
+    cart.splice(foundId, 1);
+    displayCart();
 };
