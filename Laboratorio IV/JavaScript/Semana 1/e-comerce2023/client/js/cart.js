@@ -1,8 +1,6 @@
 const modalContainer = document.getElementById("modal-container");
 const modalOverlay = document.getElementById("modal-overlay");
-
 const cartBtn = document.getElementById("cart-btn");
-
 
 const displayCart = () => {
     modalContainer.innerHTML = "";
@@ -65,12 +63,16 @@ const displayCart = () => {
             displayCart();
         })
 
+        //delete
+        const deleteProduct = modalBody.querySelector("delete-product")
+
+        deleteProduct.addEventListener("clock", () => {
+            deleteCartProduct(product.id);
+        })
     });
 
     //modal footer
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
-
-
 
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
@@ -81,3 +83,7 @@ const displayCart = () => {
 };
 
 cartBtn.addEventListener("click", displayCart);
+
+const deleteCartProduct = (id) => { 
+    const foundId = cart.findIndex((element)=> element.id === id);
+};
