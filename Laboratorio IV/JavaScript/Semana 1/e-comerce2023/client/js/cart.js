@@ -29,7 +29,7 @@ const displayCart = () => {
     modalContainer.append(modalHeader);
 
     //modal Body
-    if(cart.length > 0){
+    if (cart.length > 0) {
 
         cart.forEach((product) => {
             const modalBody = document.createElement("div");
@@ -54,7 +54,7 @@ const displayCart = () => {
 
             const decrese = modalBody.querySelector(".quantity-btn-decrese");
             decrese.addEventListener("click", () => {
-                if(product.quanty !== 1){
+                if (product.quanty !== 1) {
                     product.quanty--;
                     displayCart();
                     displayCartCounter();
@@ -71,21 +71,31 @@ const displayCart = () => {
 
             //delete
             const deleteProduct = modalBody.querySelector(".delete-product");
-            deleteProduct.addEventListener("click", ()=> {
+            deleteProduct.addEventListener("click", () => {
                 deleteCartProduct(product.id)
             })
         });
 
         //modal footer
-        const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
+        const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0);
 
         const modalFooter = document.createElement("div");
         modalFooter.className = "modal-footer";
         modalFooter.innerHTML = `
-    <div class = "total-price">Total: ${total}</div>`;
+            <div class = "total-price">Total: ${total}</div>
+            <button class"btn-primary" id="checkout-btn"> go to checkout</button> 
+            <div id="button-checkout"></div>
+        `;
 
         modalContainer.append(modalFooter);
-    }else{
+        //mp;
+        const mercadopago = new MercadoPago("public_key", {
+            locale: "es-AR",
+        });
+
+        const checkoutButton = modalFooter.querySelector("checkout-btn");
+
+    } else {
         const modalText = document.createElement("h2");
         modalText.className = "modal-body";
         modalText.innerText = "your cart is empty";
@@ -95,19 +105,19 @@ const displayCart = () => {
 
 cartBtn.addEventListener("click", displayCart);
 
-const deleteCartProduct =(id) => {
-    const foundId = cart.findIndex((element)=> element.id === id);
+const deleteCartProduct = (id) => {
+    const foundId = cart.findIndex((element) => element.id === id);
     cart.splice(foundId, 1);
     displayCart();
     displayCartCounter();
 };
 
-const displayCartCounter = ()=> {
+const displayCartCounter = () => {
     const cartLenght = cart.reduce((acc, el) => acc + el.quanty, 0);
     if (cartLenght > 0) {
         cartCounter.style.display = "block";
         cartCounter.innerText = cartLenght;
-    }else{
+    } else {
         cartCounter.style.display = "none";
     }
 
