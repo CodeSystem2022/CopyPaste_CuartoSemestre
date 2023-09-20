@@ -12,11 +12,11 @@ mercadopago.configure({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "../../client")));
+app.use(express.static(path.join(__dirname, "../client")));
 app.use(cors());
 
 app.get("/", function () {
-    path.resolve(__dirname,"..", "client", "index.html");
+    res.sendFile(path.resolve(__dirname, "..", "client", "index.html"));
 });
 
 app.post("/create_preference", (req, res) => {
@@ -56,6 +56,6 @@ app.get('/feedback', function (req, res) {
     });
 });
 
-app.listen(8080, () => { //ESCUCHA EL SERVIDOR EN EL PUERTO 8080
+app.listen(8080, () => {
     console.log("The server is now running on Port 8080");
 });
