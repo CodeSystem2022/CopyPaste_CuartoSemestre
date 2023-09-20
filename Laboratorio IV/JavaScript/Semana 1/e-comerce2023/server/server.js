@@ -9,7 +9,6 @@ mercadopago.configure({
     access_token: "APP_USR-8005534317430798-091718-b982966f21e5ad67337aec6868ccafbb-1483636744",
 });
 
-
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client")));

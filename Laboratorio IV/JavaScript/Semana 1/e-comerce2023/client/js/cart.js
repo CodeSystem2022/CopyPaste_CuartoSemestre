@@ -2,6 +2,7 @@ const modalContainer = document.getElementById("modal-container");
 const modalOverlay = document.getElementById("modal-overlay");
 const cartBtn = document.getElementById("cart-btn");
 const cartCounter = document.getElementById("cart-counter");
+
 const displayCart = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "block";
@@ -71,18 +72,18 @@ const displayCart = () => {
     <div class = "total-price">Total: ${total}</div>
     <button class = "btn-primary" id="checkout-btn"> go to checkout</button> 
     <div id="button-checkout"></div>
-    `; // boton que lleva al checkout y dispara el evento de mercadopago
+    `;
 
         modalContainer.append(modalFooter);
 
         //mp;
         const mercadopago = new MercadoPago("APP_USR-5edee690-9d67-4f22-b564-0bffaa7bf97a", {
             locale: "es-AR",
-        }); //inicia una instancia de Mercado Pago
+        });
 
-        const checkoutButton = modalFooter.querySelector("#checkout-btn"); //capturamos el boton para el evento click y ejecutar
+        const checkoutButton = modalFooter.querySelector("#checkout-btn");
         checkoutButton.addEventListener("click", function (){
-            checkoutButton.remove(); //remueve el boton checkout para evitar dobles comprar
+            checkoutButton.remove();
             const orderData = {
                 quantity: 1,
                 description: "compra de ecomerce",
@@ -141,6 +142,7 @@ const deleteCartProduct =(id) => {
     displayCart();
     displayCartCounter();
 };
+
 const displayCartCounter = ()=> {
     const cartLenght = cart.reduce((acc, el) => acc + el.quanty, 0);
     if (cartLenght > 0) {
@@ -149,6 +151,5 @@ const displayCartCounter = ()=> {
     }else{
         cartCounter.style.display = "none";
     }
-
 
 };
