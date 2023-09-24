@@ -1,9 +1,7 @@
+from mi_clase import MiClase
 
+# help devuelve la documentacion de la clase
+# help(MiClase)
+# help(MiClase.)  con el punto muestra los métodos tambien
 
-'''
-Podemos crear documentación
-'''
-
-"""
-Estas son las dos maneras de documentar
-"""
+print(MiClase.__doc__) 
