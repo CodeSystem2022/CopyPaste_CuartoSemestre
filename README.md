@@ -107,12 +107,12 @@
 	</tr>
   <tr align="center">
 		<td>14°</td>
-		<td>13/10 al 17/11 </td>
+		<td>13/11 al 17/11 </td>
 		<td>Solán Leonardo</td>
 	</tr>
   <tr align="center">
 		<td>15°</td>
-		<td>20/10 al 24/11 </td>
+		<td>20/11 al 24/11 </td>
 		<td>Viola Jésica</td>
 	</tr>
   <tr align="center">
