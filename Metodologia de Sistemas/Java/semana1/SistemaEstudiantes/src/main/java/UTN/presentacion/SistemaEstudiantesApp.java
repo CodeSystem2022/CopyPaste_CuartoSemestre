@@ -46,7 +46,8 @@ public class Main {
                 System.out.println("Listado de Estudiantes...");
                 //no muestra la informacion, solo recupera la info y regresa una lista
                 var estudiantes = estudianteDAO.listarEstudiantes();//recibe el listado
-                //vamnos a interar cada objeto de tipo estudiante
+                //vamos a iterar cada objeto de tipo estudiante
+
                 estudiantes.forEach(System.out::println);//para imprimir la lista
             }//fin caso 1
             case 2 -> {//Buscar estudiante por id
