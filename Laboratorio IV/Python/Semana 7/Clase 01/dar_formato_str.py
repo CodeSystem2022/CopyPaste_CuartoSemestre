@@ -14,5 +14,6 @@ nombre = 'Juan'
 edad = 19
 sueldo = 3000
 
+# se puede modificar el orden ya que manejamos índices.
 mensaje = 'Nombre {0} Edad {1} Sueldo {2:.2f}'.format(nombre, edad, sueldo)
 print(mensaje)
