@@ -17,3 +17,7 @@ sueldo = 3000
 # se puede modificar el orden ya que manejamos índices.
 mensaje = 'Nombre {0} Edad {1} Sueldo {2:.2f}'.format(nombre, edad, sueldo)
 print(mensaje)
+
+diccionario = {'nombre': 'Ivan', 'edad': 35, 'sueldo': 8000.00}
+mensaje = 'Nombre {dic[nombre]} Edad {dic[edad]} Sueldo{dic[sueldo]:.2f}'.format(dic=diccionario)
+print(mensaje)
