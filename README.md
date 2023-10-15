@@ -105,21 +105,6 @@
 		<td>06/11 al 10/11 </td>
 		<td>Britez Neira Leila</td>
 	</tr>
-  <tr align="center">
-		<td>14°</td>
-		<td>13/11 al 17/11 </td>
-		<td>Solán Leonardo</td>
-	</tr>
-  <tr align="center">
-		<td>15°</td>
-		<td>20/11 al 24/11 </td>
-		<td>Viola Jésica</td>
-	</tr>
-  <tr align="center">
-		<td>16°</td>
-		<td>27/11 al 01/12 </td>
-		<td>Britez Neira Leila</td>
-	</tr>
 </table>
 <br>
 
