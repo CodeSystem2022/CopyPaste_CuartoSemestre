@@ -13,14 +13,14 @@ public class EstudianteServicio implements iEstudianteServicio{
     private EstudianteRepositorio estudianteRepositorio; //es el objeto que traemos
 
     @Override
-    public List<Estudiante> listarEstudiantes() { //Método listarEstudiantes - video 1
+    public List<Estudiante> listarEstudiantes() { //Método listarEstudiantes
         List<Estudiante> estudiantes = estudianteRepositorio.findAll(); //nos trae toda la lista de estudiantes
         return estudiantes;
     }
 
     @Override
     public Estudiante buscarEstudianteporId(Integer idEstudiante) {
-        Estudiante estudiante = estudianteRepositorio.findById(idEstudiante).orElse(null); // findById es opcional si norecibe el id o regresa en este caso un null
+        Estudiante estudiante = estudianteRepositorio.findById(idEstudiante).orElse(null); // findById es opcional si no recibe el id o regresa en este caso un null
         return  estudiante;
     }
 
