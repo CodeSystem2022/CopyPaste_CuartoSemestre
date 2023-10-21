@@ -2,7 +2,7 @@
 console.log('Hola a toda la cohorte 2022')
 
 var i = 0;
-setInterval(function () {
+setInterval(function() {
     console.log(i);
     i++;
     //if( i === 5){
@@ -11,4 +11,4 @@ setInterval(function () {
     //}
 }, 1000); // se activa cada 1 segundo, se cancela con ctr+c
 
-console.log('Segunda instrucción');
+console.log('Ultima instrucción');
