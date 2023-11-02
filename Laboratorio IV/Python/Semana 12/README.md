@@ -4,4 +4,4 @@
     
   <br>
 
-  <h4 align="center"> Creacion de nuestro proyecto "Game"</h4>
+  <h4 align="center"> Creacion de nuestro proyecto "Game"  <br> Instalacion de los paquetes necesarios  </h4>
