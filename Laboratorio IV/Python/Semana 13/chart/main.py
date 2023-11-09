@@ -19,7 +19,7 @@ def run():
         country = result[0] #sobreescribimos la variable
         print(country) #visualizamos el diccionario
         labels, values = utils.get_population(country) #recibimos la población
-        charts.generate_bar_chart(country['country'], labels, values)
+        charts.generate_bar_chart(country['Country'], labels, values)
 
 if __name__ == '__main__':
     run()
